@@ -36,6 +36,28 @@ igbo_dict = {
     'Eze': 'king',
 }
 
+igala_dict = {
+    'good morning': 'olodudu',
+    'thanks': 'agba',
+    'come': 'lia',
+    'go': 'lo',
+    'god': 'ojo',
+    'eat': 'jeun',
+    "one": "oka",
+    'two': 'eji',
+    'twins': 'ogwu',
+    'floor': 'ane',
+    'three': 'eta',
+    'room': 'ejefu',
+    'kitchen': 'obuka',
+    'leg': 'ere',
+    'who': 'ene',
+    'love': 'ufedo',
+    'water': 'omi',
+    'head': 'oji',
+    'bed': 'ate',
+    'amen': 'ami'
+}
 
 def search(word):
     if word in igbo_dict:
