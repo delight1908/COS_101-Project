@@ -82,6 +82,29 @@ ijaw_dict = {
     'peace': 'ziri'
 }
 
+Efik_dict = {
+    'good morning':'emesire',
+    'please':'daiya',
+    'sorry':'kpe',
+    'dog' : 'ewa',
+    'thankyou':'sosono',
+    'goat': 'ebot',
+    'bread': 'uyo',
+    'God':'Abasi',
+    'bye':'kaadi',
+    'sleep':'daiya',
+    'five':'ition',
+    'witch':'ifot',
+    'water':'mmoon',
+    'seven':'itiaba',
+    'love': 'ima',
+    'joy':'idara',
+    'grace':'mfon',
+    'lion':'ekpe',
+    'door':'usun',
+    'war':'ekon',
+}
+
 def search(word):
     if word in igbo_dict:
         result.set(igbo_dict[word])
