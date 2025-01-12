@@ -59,6 +59,54 @@ igala_dict = {
     'amen': 'ami'
 }
 
+from tkinter import Tk, Entry, Button, Label, StringVar
+
+from Ijaw import ijaw_dictonary
+
+window =Tk()
+window.geometry("600x250")
+window.title("Ijaw dictionary")
+label = Label( text="Dictionary", font=("Algerian", 20))
+label.pack(padx=20, pady=20)
+entry_text = Entry(window)
+entry_text.pack()
+result = StringVar()
+result_label =  Label(window, textvariable=result)
+result_label.pack()
+ijaw_dict = {
+    'water': 'ame',
+    'land': 'anj',
+    'fish': 'bere',
+    'tree': 'diro',
+    'house': 'eke',
+    'sky': 'feru',
+    "one": "oka",
+    'boat': 'ibe',
+    'food': 'ine',
+    'moon': 'kpereke',
+    'stone': 'kpo',
+    'room': 'ejefu',
+    'kitchen': 'moto',
+    'sun': 'oku',
+    'gold': 'ola',
+    'river': 'piri',
+    'bird': 'temo',
+    'forest': 'wuo',
+    'love': 'yin',
+    'peace': 'ziri'
+}
+def search():
+    word = entry_text.get()
+    print(word)
+    if word in ijaw_dictonary:
+     result.set(ijaw_dictonary[word])
+     print(ijaw_dictonary[word])
+    else:
+       result.set("Not found")
+       print("Not found")
+search_btn = Button(window, text="Search", command=search)
+search_btn.pack()
+window.mainloop()
 def search(word):
     if word in igbo_dict:
         result.set(igbo_dict[word])
